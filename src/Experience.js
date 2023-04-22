@@ -11,7 +11,7 @@ import { Center,  OrbitControls } from "@react-three/drei";
 import { Suspense } from "react";
 import { DoubleSide } from "three";
 import Imagen from "./Imagen.js";
-import Video2 from "./Video.js";
+import Video from "./Video.js";
 
 export function Experience() {
     
