@@ -7,13 +7,11 @@
   * 
 */
 
-import { Center,  OrbitControls, Html } from "@react-three/drei";
-import { Suspense, useRef, useState } from "react";
+import { Center,  OrbitControls } from "@react-three/drei";
+import { Suspense } from "react";
 import { DoubleSide } from "three";
-import Video from "./Video.js";
 import Imagen from "./Imagen.js";
 import Video2 from "./Video.js";
-import Video3 from "./Video3.js";
 
 export function Experience() {
     
@@ -24,7 +22,7 @@ export function Experience() {
         <color attach="background" args={["grey"]} />
         <Suspense fallback={null}>
           <Center>
-            <Video2 position={[0, 1, -7.4]} />
+            <Video position={[0, 1, -7.4]} />
             <Imagen />
             //piso
             <mesh position={[0, -3, 0]} rotation={[-Math.PI / 2, 0, 0]}>
@@ -39,13 +37,6 @@ export function Experience() {
           </Center>
         </Suspense>
         <OrbitControls />
-        {/*<OrbitControls
-          makeDefault
-          enableRotate={false}
-          enablePan={false}
-          maxZoom={0.0001}
-          maxDistance={6}
-    />*/}
       </>
     );
   }
